@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript -->
+  <script defer src="script.js"></script>
+
+  <img rel="prelaod" src="bakgrunn_gif_julequiz.mp4" alt="background-gif og a christmas ambiance">
+  <title>r</title>
+</head>
+
+<body>
+  <div id="background-blink" class="hide"></div>
+
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="alternativ-container">
+        <div id="answer-buttons" class="btn-grid">
+          <label class="btn" onclick="activateInputZero()">
+            <input type="radio" class="btn" id="btn-0" name="radio">Answer 1</input>
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="btn" onclick="activateInputOne()">
+            <input type="radio" class="btn" id="btn-1" name="radio">Answer 2</input>
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="btn" onclick="activateInputTwo()">
+            <input type="radio" class="btn" id="btn-2" name="radio">Answer 3</input>
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="btn" onclick="activateInputThree()">
+            <input type="radio" class="btn" id="btn-3" name="radio">Answer 4</input>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="controls">
+      <button onclick="startSpill()" id="start-btn" class="start-btn btn" )>Start</button>
+      <button onclick="skjekkOmRett()" id="check-btn" class="btn hide">Skjekk Svar</button>
+      <button onclick="nesteQuestion()" id="next-btn" class="next-btn btn hide">Next</button>
+      <button onclick="quizResultater()" id="end-quiz" class="end-quiz btn hide">Vis Resultater</button>
+      <!-- Prøv å få den til å vente til etter du har skjekka svaret på siste spørsmålet-->
+    </div>
+  </div>
+
+  <div id="resultat" class="hide">
+    <h1 id="sumString">HALLO</h1>
+  </div>
+
+
+</body>
+
+</html>
