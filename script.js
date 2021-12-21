@@ -294,7 +294,7 @@ function nesteQuestion(){
     if(poengSum === questionIndex){
       document.getElementById('background-blink').classList.remove('hide')
       questionString.innerHTML="WHOHO du fekk"+ poengSum + ' / ' + questionIndex
-    } else if (poensSum === 0){
+    } else if (poengSum === 0){
       questionString.innerHTML="Du fekk ingen rette desverre, du må øve litt på jul..."
     } else{
       questionString.innerHTML="Gratulerer du fekk:"+ poengSum + ' / ' + questionIndex
